@@ -249,7 +249,7 @@ function App(props) {
 
   return (
     <div className="App">
-     <div className="bodyG"> 
+     <div > 
       <Header>
      
         <div style={{ position: "relative", display: "flex", flexDirection: "column",  }}>
@@ -278,7 +278,9 @@ function App(props) {
             />
           </div>
         </div>
+        
       </Header>
+      
       {yourLocalBalance.lte(ethers.BigNumber.from("0")) && (
         <FaucetHint localProvider={localProvider} targetNetwork={targetNetwork} address={address} />
       )}

@@ -1,6 +1,15 @@
 .App {
   text-align: center;
   padding-left: calc(100vw - 100%);
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(219, 219, 194, 0.5)),
-    url("../images/comp.svg")
+  
+}
+
+.appcont{
+  background-image: url("https://i.ibb.co/dBPFt0Y/bg5.png");
+  width: fit-content;
+  align-self: flex-end;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 300px;
 }
