@@ -247,13 +247,14 @@ function App(props) {
 
   const faucetAvailable = localProvider && localProvider.connection && targetNetwork.name.indexOf("local") !== -1;
 
-  return (
+  return ( 
+    <div className="parent"> 
     <div className="App">
      <div className="bodyG"> 
       <Header>
      
         <div style={{ position: "relative", display: "flex", flexDirection: "column",  }}>
-               
+         
           <div style={{ display: "flex", flex: 1 }}>
             {USE_NETWORK_SELECTOR && (
               <div style={{ marginRight: 20 }}>
@@ -279,6 +280,7 @@ function App(props) {
           </div>
         </div>
       </Header>
+      </div>
       {yourLocalBalance.lte(ethers.BigNumber.from("0")) && (
         <FaucetHint localProvider={localProvider} targetNetwork={targetNetwork} address={address} />
       )}
@@ -295,6 +297,7 @@ function App(props) {
       <ThemeSwitcher/> 
       
     </div>
+    
     </div>
   );
 }

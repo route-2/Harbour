@@ -4,12 +4,12 @@ import './styles.css'
 
 function HomePage() {
     return ( 
-        <div> 
+    
         
         <div className='cont'>
             
         </div>
-</div>
+
      );
 }
 
