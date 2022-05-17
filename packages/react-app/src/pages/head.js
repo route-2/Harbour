@@ -5,7 +5,8 @@ import './styles.css'
 function Header() {
     return ( 
         <div className='cont'>
-            <p className='header' > HARBOR <br/> <img className='line' src={Line} /> <br/> <span className='purple'> </span> </p>
+            <p className='header' > HARBOR <br/> <img className='comp' src={Line} /> <br/> <span className='purple'> </span> </p>
+            <span className="compImg"> <img className="comp" src="../images/comp.svg"> </img> </span> 
         </div>
 
      );

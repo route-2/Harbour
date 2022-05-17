@@ -17,7 +17,6 @@ body {
     background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(219, 219, 194, 0.5)),
     url("../images/plainback.svg");
     background-repeat: no-repeat;
-    
 }
 
 .header{
@@ -29,7 +28,7 @@ body {
     word-spacing: 3px;
     padding-right: 4px;
     padding-left: 4px;
-   
+ 
     
 
 }
@@ -45,4 +44,12 @@ body {
 
 .purple{
     color: #8F00FF;
+}
+.cont {
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+   
+    background-repeat: no-repeat;
+
 }
