@@ -32,6 +32,7 @@ import { Transactor, Web3ModalSetup } from "./helpers";
 import { Home, ExampleUI, Hints, Subgraph } from "./views";
 import { useStaticJsonRPC } from "./hooks";
 import HomePage from "./pages/Homepage";
+import Head from "./pages/head"
 import ThemeSwitcher from "./components/ThemeSwitch";
 
 const { ethers } = require("ethers");
@@ -248,10 +249,11 @@ function App(props) {
 
   return (
     <div className="App">
-      {/* ✏️ Edit the header and change the title to your project name */}
+     <div className="bodyG"> 
       <Header>
-        {/* 👨‍💼 Your account is in the top right with a wallet at connect options */}
-        <div style={{ position: "relative", display: "flex", flexDirection: "column" }}>
+     
+        <div style={{ position: "relative", display: "flex", flexDirection: "column",  }}>
+               
           <div style={{ display: "flex", flex: 1 }}>
             {USE_NETWORK_SELECTOR && (
               <div style={{ marginRight: 20 }}>
@@ -292,6 +294,7 @@ function App(props) {
       <HomePage/>     
       <ThemeSwitcher/> 
       
+    </div>
     </div>
   );
 }

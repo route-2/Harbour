@@ -1,4 +1,6 @@
 .App {
   text-align: center;
   padding-left: calc(100vw - 100%);
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(219, 219, 194, 0.5)),
+    url("../images/comp.svg")
 }

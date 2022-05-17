@@ -5,6 +5,7 @@ import { useThemeSwitcher } from "react-css-theme-switcher";
 import Address from "./Address";
 import Balance from "./Balance";
 import Wallet from "./Wallet";
+import Header from "./Header";
 
 /** 
   ~ What it does? ~
@@ -91,6 +92,7 @@ export default function Account({
 
   return (
     <div style={{ display: "flex" }}>
+    
       {display}
       {web3Modal && (
         <Button
