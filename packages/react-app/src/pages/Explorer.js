@@ -2,7 +2,7 @@ import React from 'react';
 import Line from '../images/Line.svg'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import HomePage from './Homepage';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 
@@ -19,6 +19,7 @@ import './styles.css'
  const Explorer =() =>
 
   {
+      
     // const [query, setQuery] = useState("");
     // const{tracks}= ;
     // const{items} = tracks;
@@ -26,7 +27,9 @@ import './styles.css'
 return (
 <div className='navex'>
 <div className='expheader'> 
-<h1 className="harbor"> HARBOR    </h1>
+{/* <h1 className="harbor" > HARBOR    </h1> */}
+<a href="/" className="harbor" onClick={HomePage}> HARBOR
+</a>
 <div className='expcomp'>
     <input type='text'  placeholder='Search address' className='search'/> 
     {/* onChange={e => setQuery(e.target.value)} */}

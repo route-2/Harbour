@@ -48,7 +48,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-width: 1753px;
+width: 87vw;
 height: 105px;
 left: 259px;
 top: -5px;
@@ -68,15 +68,14 @@ line-height: 59px;
 .search {  position: absolute;
   
     border-radius: 30px;
-   display: flex;
-   flex-direction: row;
+  
    align-items: center;
    justify-content: center;
    color: black;
  
-    width: 1011px;
+    width: 50vw;
     height: 54px;
-    left: 371px;
+    left: 171px;
     padding-left: 30px;
     top: 36px;
     
@@ -106,7 +105,7 @@ color: #151d18;
     position: absolute;
     width: 487px;
     height: fit-content;
-    left: 83px;
+    left: 90px;
     top: 363px;
     padding-bottom: 40px ;
     background: linear-gradient(90deg, rgba(51, 123, 204, 0.7) 0%, rgba(51, 123, 204, 0.329583) 100%);

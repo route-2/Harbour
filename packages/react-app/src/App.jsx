@@ -34,6 +34,7 @@ import { useStaticJsonRPC } from "./hooks";
 import HomePage from "./pages/Homepage";
 import Head from "./pages/head"
 import Track from "./pages/track";
+import maincomp from "./images/maincomp.png"
 import ThemeSwitcher from "./components/ThemeSwitch";
 
 const { ethers } = require("ethers");
@@ -252,13 +253,14 @@ function App(props) {
 
     <div className="App">
      <div className="mainpage" > 
+    
      
      
      
       <Header>
       
      
-       
+    
          
             {USE_NETWORK_SELECTOR && (
               

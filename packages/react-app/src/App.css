@@ -47,6 +47,12 @@
   margin-top: 2px;
   
 }
+.maincomp {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
 .appcont img {
 
 width:100%;
@@ -126,7 +132,7 @@ word-spacing: 30px;
   position: absolute;
 width: 838px;
 height: 762px;
-left: 810px;
+left: 710px;
 top: 167px;
 
 background: linear-gradient(90deg, rgba(51, 123, 204, 0.7) 0%, rgba(51, 123, 204, 0.329583) 100%);
