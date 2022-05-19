@@ -1,15 +1,17 @@
 import React from 'react';
-import Line from '../images/Line.svg'
+
+import Comp from '../images/maincomp.png'
 import './styles.css'
 
-function Header() {
+function Head() {
     return ( 
         <div className='cont'>
-            <p className='header' > HARBOR <br/> <img className='comp' src={Line} /> <br/> <span className='purple'> </span> </p>
-            <span className="compImg"> <img className="comp" src="../images/comp.svg"> </img> </span> 
+            <p className='header' > HARBOR  <br/> <p className='portfolio'> Portfolio </p> <br/> <span className='purple'> </span> <img className='appcont' src={Comp}/> </p>
+            <span className="compImg">  </span> 
         </div>
+        
 
      );
 }
 
-export default Header;
+export default Head;

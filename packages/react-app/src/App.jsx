@@ -33,6 +33,7 @@ import { Home, ExampleUI, Hints, Subgraph } from "./views";
 import { useStaticJsonRPC } from "./hooks";
 import HomePage from "./pages/Homepage";
 import Head from "./pages/head"
+import Track from "./pages/track";
 import ThemeSwitcher from "./components/ThemeSwitch";
 
 const { ethers } = require("ethers");
@@ -248,22 +249,27 @@ function App(props) {
   const faucetAvailable = localProvider && localProvider.connection && targetNetwork.name.indexOf("local") !== -1;
 
   return (
+
     <div className="App">
-     <div > 
-      <Header>
+     <div className="mainpage" > 
      
-        <div style={{ position: "relative", display: "flex", flexDirection: "column",  }}>
-               
-          <div style={{ display: "flex", flex: 1 }}>
+     
+     
+      <Header>
+      
+     
+       
+         
             {USE_NETWORK_SELECTOR && (
-              <div style={{ marginRight: 20 }}>
+              
                 <NetworkSwitch
                   networkOptions={networkOptions}
                   selectedNetwork={selectedNetwork}
                   setSelectedNetwork={setSelectedNetwork}
                 />
-              </div>
+             
             )}
+         
             <Account
               useBurner={USE_BURNER_WALLET}
               address={address}
@@ -276,10 +282,11 @@ function App(props) {
               logoutOfWeb3Modal={logoutOfWeb3Modal}
               blockExplorer={blockExplorer}
             />
-          </div>
-        </div>
+          
+        
         
       </Header>
+      <Track/>
       
       {yourLocalBalance.lte(ethers.BigNumber.from("0")) && (
         <FaucetHint localProvider={localProvider} targetNetwork={targetNetwork} address={address} />
@@ -293,7 +300,7 @@ function App(props) {
         USE_NETWORK_SELECTOR={USE_NETWORK_SELECTOR}
       />
 
-      <HomePage/>     
+      
       <ThemeSwitcher/> 
       
     </div>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
-.cont{
+/* .cont{
     flex: auto;
     flex-direction: row;
     text-align: left;
@@ -12,14 +12,11 @@
     background-repeat: no-repeat;
     height: 100%;
      */
-}
-body {
-    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(219, 219, 194, 0.5)),
-    url("../images/plainback.svg");
-    background-repeat: no-repeat;
-}
 
-.header{
+
+   
+
+/* .header{
     font-family: 'Montserrat','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: calc(5px + 3vmax);
     font-weight: bold;
@@ -31,25 +28,4 @@ body {
  
     
 
-}
-.line {
-    padding-left: 4px;
-    padding-right: 4px;
-    height: 2em;
-    margin-left: 0.5em;
-    
-    
-    
-}
-
-.purple{
-    color: #8F00FF;
-}
-.cont {
-    display: flex;
-    flex-direction:row;
-    justify-content: flex-end;
-   
-    background-repeat: no-repeat;
-
-}
+} */
