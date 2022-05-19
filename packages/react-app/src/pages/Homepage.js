@@ -4,6 +4,7 @@ import Track from './track';
 import '../App.css'
 
 import './styles.css'
+import ThemeSwitcher from '../components/ThemeSwitch';
 
 function HomePage() {
     return ( 
@@ -14,6 +15,7 @@ function HomePage() {
         <Header/>
 
             <Track/>
+            <ThemeSwitcher/>
         </div>
            
         </div>

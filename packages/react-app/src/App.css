@@ -122,3 +122,36 @@ margin:1px 10px 15px;
 word-spacing: 30px;
 
 }
+.Trans {
+  position: absolute;
+width: 838px;
+height: 762px;
+left: 810px;
+top: 167px;
+
+background: linear-gradient(90deg, rgba(51, 123, 204, 0.7) 0%, rgba(51, 123, 204, 0.329583) 100%);
+border-radius: 60px;
+overflow-x: scroll;
+}
+.leftcont {
+  margin-left: 60px;
+}
+.rightcont {
+ margin-left:300px;
+ margin-top:1vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Cardlist
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.Time {
+  margin-top: 40px;
+  margin-left: 60px;
+
+}
