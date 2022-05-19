@@ -8,6 +8,7 @@ import { Routes } from "react-router-dom";
 import App from "./App";
 import "./index.css";
 import Explorer from "./pages/Explorer";
+import HomePage from "./pages/Homepage";
 
 const themes = {
   dark: `${process.env.PUBLIC_URL}/dark-theme.css`,
@@ -29,6 +30,7 @@ ReactDOM.render(
       <BrowserRouter>
         
         <Routes>
+        <Route path="/" element={<HomePage/>}/>
           <Route path="/Explorer" element={<Explorer />}/>
         </Routes>
       </BrowserRouter>

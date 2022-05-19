@@ -24,8 +24,12 @@ export default function Header({ link, title, subTitle, ...props }) {
       <div className="navhead">
       <p> <a href="#Portfolio"> Portfolio </a> </p> <br/>
       
-        <p> <Link to ='/Explorer'> Explorer </Link></p>
+        <p> <a href="/Explorer"> Explorer </a> </p>
       </div>
+      <div>
+        {props.children}
+      </div>
+      
       </div>
       
       
@@ -48,10 +52,10 @@ export default function Header({ link, title, subTitle, ...props }) {
       
       
       
-      <div className="appcont">
+      {/* <div>
         {props.children}
       </div>
-      
+       */}
      
       
       
